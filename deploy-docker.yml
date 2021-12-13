@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: hariapp
-        image: "suresh2020dev/sureshwebapp:{{Build_Number}}"
+        image: "suresh2020dev/sureshwebapp:"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
