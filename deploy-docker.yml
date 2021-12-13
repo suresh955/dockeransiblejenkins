@@ -21,7 +21,7 @@
         state: present
     - name: Start the container
       docker_container:
-        name: hariapp
+        name: sureshapp
         image: "suresh2020dev/sureshwebapp:"
         state: started
         published_ports:
