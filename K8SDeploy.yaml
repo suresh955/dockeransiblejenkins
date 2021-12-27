@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: sureshwebapp
 spec:
   replicas: 1 
   template:
     metadata:
       labels:
-        app: hello-world
+        app: sureshwebapp
     spec:
       containers:
-      - name: hello-world-pod
+      - name: sureshwebapp
         image: suresh2020dev/sureshwebapp:latest
         ports: 
         - containerPort: 80
@@ -19,10 +19,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world-service
+  name: sureshwebapp
 spec:
   selector:
-    app: hello-world
+    app: sureshwebapp
   ports:
   - name: http
     protocol: TCP
