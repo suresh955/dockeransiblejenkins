@@ -15,10 +15,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
     <finalName>dockeransible</finalName>
-  </build>
-  <build>
   <pluginManagement>
     <plugins>
       <plugin>
