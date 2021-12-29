@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-service
+  namespace: suresh
+spec:
+  type: NodePort
+  ports:
+  - port: 3000
+  selector:
+    app: webapp
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world
+  namespace: hello-world
+  labels:
+    app: webapp
+spec:
+  containers:
+    - name: hello-world
+      image: 147023380632.dkr.ecr.<aws-region>.amazonaws.com/hello-world:latest
+      imagePullPolicy: Always
+      ports:
+        - name: web
+          containerPort: 3000
+  imagePullSecrets:
+      - name: ecrcred
