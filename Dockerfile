@@ -14,5 +14,5 @@ RUN yum -y install java
 RUN java -version
 
 WORKDIR /opt/tomcat/webapps
-COPY target/*.war /opt/tomcat/webapps/dockeransible.war
+COPY target/*.war /opt/tomcat/webapps/helloworld.war
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
