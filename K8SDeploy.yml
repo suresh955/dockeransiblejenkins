@@ -3,10 +3,12 @@ kind: Deployment
 metadata:
   name: hello-world
   labels:
-  app: hello-world
+    app: hello-world
 spec:
   replicas: 2
   selector:
+  matchLabels:
+    app: hello-world
   template:
     metadata:
       labels:
@@ -15,7 +17,7 @@ spec:
       containers:
       - name: hello-world
         image: 147023380632.dkr.ecr.us-east-2.amazonaws.com/hello-world:latest
-        ports: 
+        ports:
         - containerPort: 8080
 ---
 apiVersion: v1
