@@ -18,13 +18,15 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <servers>
+  <settings>
+    <servers>
     <server>
       <username>admin</username>
       <password>admin123</password>
       <id>central</id>
     </server>
   </servers>
+  </settings>
   <distributionManagement>
     <repository>
         <id>central</id>
