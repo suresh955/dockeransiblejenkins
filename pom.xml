@@ -18,7 +18,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-19-155.us-east-2.compute.internal-releases</name>
+        <url>http://3.144.160.227:8081/artifactory/firstproject</url>
+    </repository>
+</distributionManagement>
   
   <build>
     <finalName>helloworld</finalName>
