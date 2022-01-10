@@ -22,7 +22,7 @@
     <repository>
         <id>central</id>
         <name>ip-172-31-19-155.us-east-2.compute.internal-releases</name>
-        <url>http://3.143.226.211:8081/artifactory/firstproject</url>
+        <url>http://3.145.215.47:8081/artifactory/firstproject</url>
     </repository>
 </distributionManagement>
   
