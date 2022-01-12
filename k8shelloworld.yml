@@ -17,6 +17,8 @@ spec:
       containers:
       - name: helloworld
         image: 147023380632.dkr.ecr.us-east-2.amazonaws.com/hello-world:latest
+      imagePullSecrets:
+      - name: helloworld
         ports:
         - containerPort: 8080
 ---
