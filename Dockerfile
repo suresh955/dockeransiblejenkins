@@ -11,7 +11,6 @@ RUN wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomc
 RUN tar xvfz apache*.tar.gz 
 RUN mv apache-tomcat-8.5*/* /opt/tomcat/. 
 RUN yum -y install java 
-RUN java -version
 EXPOSE 8080
 COPY target/*.war /opt/tomcat/webapps/
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
