@@ -30,7 +30,7 @@ metadata:
   name: hello-world
 spec:
   selector:
-    app: hello-world
+    app: helloworld
   type: LoadBalancer
   ports:
   - protocol: TCP
